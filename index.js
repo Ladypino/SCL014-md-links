@@ -1,13 +1,5 @@
-/* console.log('Es el mapa es el mapa es el mapa  es el mapa ES EL MAPAAAA!!!!!');
-console.log(process.argv[2]);
+const pathAbsolute= require("./pathAbsolute");
 
-process.argv
- */
+const file = process.argv[2];
 
-
-/* module.exports = () => {
-  // ...
-};node index.js
- */
-
- console.log('hola',process.argv[2],'!!!')
+pathAbsolute(file);
