@@ -1,6 +1,7 @@
 const alumno = require ('./alumno');
-console.log(nombre  + 'vive en' + ciudad +  'nacio el ' + fecha);
-
+const {nombre,ciudad} = require ('./alumno');
+console.log( `${alumno.nombre ()} vive en ${alumno.ciudad()} nacio el  ${alumno.fecha()} `);
+console.log( `${nombre ()} vive en ${ciudad()}  `);
 /* console.log('Es el mapa es el mapa es el mapa  es el mapa ES EL MAPAAAA!!!!!');
 console.log(process.argv[2]);
 

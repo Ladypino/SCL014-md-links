@@ -1,7 +1,22 @@
 
-module.exports = (alumno) => {
-const nombre = process.argv[2];
-const ciudad = process.argv[3];
-const fecha = process.argv[4];
+const nombre= () => {
+ return 'lady';
 
-  }
+
+  };
+
+  const ciudad= () => {
+    return 'rancagua';
+   
+   
+     };
+
+     const fecha= () => {
+        return '12-05-1989';
+       
+       
+         };
+
+ exports.nombre = nombre;
+ exports.ciudad = ciudad;
+ exports.fecha = fecha;
