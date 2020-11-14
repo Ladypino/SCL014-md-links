@@ -3,7 +3,7 @@ const path = require("path");
 const regExpressionUrl = require("./regularExpression");
 
 const readFiles = (file) => {
-  fs.readFile(file, "utf8", (err, data) => {
+  fs.readFile("README.md", "utf8", (err, data) => {
     path.extname(file);
     console.log(path.extname(file));
     if (file.includes(".md")) {
