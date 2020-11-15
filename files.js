@@ -1,9 +1,9 @@
 const fs = require("fs");
 const path = require("path");
-const regExpressionUrl = require("./regularExpression");
+const regExpressionUrl = require("./expressionR");
 
 const readFiles = (file) => {
-  fs.readFile("README.md", "utf8", (err, data) => {
+  fs.readFile(file, "utf8", (err, data) => {
     path.extname(file);
     console.log(path.extname(file));
     if (file.includes(".md")) {

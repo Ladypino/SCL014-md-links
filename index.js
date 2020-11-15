@@ -1,4 +1,4 @@
-const pathAbsolute= require("./pathAbsolute");
+const pathAbsolute= require("./routing");
 
 const file = process.argv[2];
 

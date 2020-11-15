@@ -1,4 +1,4 @@
-const readingFile = require("./readFiles");
+const readingFile = require("./files");
 const path = require("path");
 
 const pathAbsolute = (ruta) => {
