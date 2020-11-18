@@ -1,5 +1,9 @@
-const pathAbsolute= require("./routing");
-
+const Route= require("./routing");
+const readDirec=require('./directory')
 const file = process.argv[2];
 
-pathAbsolute(file);
+
+readDirec(file);
+
+Route(file);
+

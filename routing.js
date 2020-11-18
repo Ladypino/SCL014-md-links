@@ -1,15 +1,15 @@
-const readingFile = require("./files");
+const File = require("./files");
 const path = require("path");
 
-const pathAbsolute = (ruta) => {
-  const pathIsAbsolute = path.isAbsolute(ruta);
-  if (pathIsAbsolute === true) {
-    readingFile(ruta);
+const Route = (ruta) => {
+  const routeAbsolute = path.isAbsolute(ruta);
+  if (routeAbsolute === true) {
+    File(ruta);
   } else {
-    const pathResolve = path.resolve(ruta);
-    const pathNormalized = path.normalize(pathResolve);
-    readingFile(pathNormalized);
+    const routeResolve = path.resolve(ruta);
+    const routeNormalized = path.normalize(routeResolve);
+    File(routeNormalized);
   }
 };
 
-module.exports = pathAbsolute;
+module.exports = Route;

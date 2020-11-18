@@ -1,17 +1,23 @@
 const fs = require("fs");
 const path = require("path");
-const regExpressionUrl = require("./expressionR");
+const expressionRURL = require("./expressionR");
+const rute = process.argv[2];
 
-const readFiles = (file) => {
+const Files = (file) => {
   fs.readFile(file, "utf8", (err, data) => {
     path.extname(file);
-    console.log(path.extname(file));
+    // console.log(path.extname(file));
     if (file.includes(".md")) {
-      regExpressionUrl(data, file);
+      expressionRURL(data, file);
+      console.log(path.extname(file));
     } else {
-      throw err;
+      console.log(err);
     }
   });
-};
 
-module.exports = readFiles;
+
+
+
+ 
+}
+module.exports = Files;

@@ -1,7 +1,7 @@
 const fs = require("fs");
 const ruta = __dirname;
 
-const readDirec = () => {
+const Directory = () => {
     fs.readdir(ruta, (err, files) => {
       if (err) {
         console.log("No se puede Leer  aiuuudaaaa T.T " + err);
@@ -11,4 +11,4 @@ const readDirec = () => {
     });
   };
 
-  module.exports = readDirec;
+  module.exports = Directory;
