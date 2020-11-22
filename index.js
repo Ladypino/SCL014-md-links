@@ -1,9 +1,7 @@
-const Route= require("./routing");
-const readDirec=require('./directory')
-const file = process.argv[2];
+const Directory = require("./directory");
+const file = process.argv[3];
 
 
-readDirec(file);
 
-Route(file);
+Directory(file);
 

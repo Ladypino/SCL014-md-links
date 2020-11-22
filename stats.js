@@ -1,19 +1,27 @@
-/* const fs = require('fs');
-
-const linksStats = (file) => {
-    
-     fs.stat(file, linksStats(err,stats){
+module.exports = {
+    AllLinksUniquesAndTotal: (object) => {
+      let AllLinksStats = object.map((orderUniquesandTotal) => orderUniquesandTotal.link);
+      const arrayAllLinksUnique = new Set(AllLinksStats);
+      const allLinksUnique = Array.from(new Set(arrayAllLinksUnique));
+  
+      return {
+        Total: object.length,
+        Unique: allLinksUnique.length,
+      };
+    },
+  
+    AllLinksBroken: (object) => {
+      let AllLinksBrokenStats = object.filter((object) => 
+      object.NumberVf >= 400);
       
-        if(err) return cb(err);
-       
-       cb(null, stats.size); 
-     })
-}
-
-linksStats('error.log', function(err, size) {
-     if(err) {
-       console.log(err);
-       return;
-     }
-     console.log('The size of the file is ' + size);
-}); */
+      const AllLinksTotalAndUnique = 
+      module.exports.AllLinksUniquesAndTotal(object);
+  
+      return {
+        Total: AllLinksTotalAndUnique.Total,
+        Unique: AllLinksTotalAndUnique.Unique,
+        Broken: AllLinksBrokenStats.length,
+      };
+    },
+  };
+  

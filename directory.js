@@ -1,14 +1,20 @@
 const fs = require("fs");
-const ruta = __dirname;
+const Route = require("./routing");
+const RouteExact = __dirname;
 
 const Directory = () => {
-    fs.readdir(ruta, (err, files) => {
+    fs.readdir(RouteExact, (err, files) => {
       if (err) {
-        console.log("No se puede Leer  aiuuudaaaa T.T " + err);
+        console.log( err);
       } else {
-        console.log(files);
+        const FilesMD = files.filter( FilesMD=> FilesMD.includes('.md'))
+        FilesMD.forEach(archivo => {Route(archivo); });
+       
       }
     });
   };
+ 
 
-  module.exports = Directory;
+  
+
+   module.exports = Directory;

@@ -1,12 +1,12 @@
 const File = require("./files");
 const path = require("path");
 
-const Route = (ruta) => {
-  const routeAbsolute = path.isAbsolute(ruta);
+const Route = (routeE) => {
+  const routeAbsolute = path.isAbsolute(routeE);
   if (routeAbsolute === true) {
-    File(ruta);
+    File(routeE);
   } else {
-    const routeResolve = path.resolve(ruta);
+    const routeResolve = path.resolve(routeE);
     const routeNormalized = path.normalize(routeResolve);
     File(routeNormalized);
   }
