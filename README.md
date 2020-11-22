@@ -21,7 +21,10 @@ Estos archivos Markdown normalmente contienen links (vínculos/ligas) que muchas
 
 Node.js es un entorno de ejecución para JavaScript construido con el motor de JavaScript V8 de Chrome. Esto nos va a permitir ejecutar JavaScript en el entorno del sistema operativo, ya sea tu máquina o un servidor, lo cual nos abre las puertas para poder interactuar con el sistema en sí, archivos, redes, ...
 
-Objetivos
+![md-links](https://user-images.githubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg)
+
+## Objetivos
+
 El objetivo práctico de este proyecto fué crear mi propia librería (o biblioteca - library) en JavaScript, usando usando Node.js, que lea y analice archivos en formato Markdown, para verificar los links que contengan y reportar algunas estadísticas.
 
 En este proyecto nos alejamos un poco del navegador para construir un programa que se ejecute usando Node.js, donde aprenderemos sobre cómo interactuar con el sistema archivos, con el entorno (proceso, env, stdin/stdout/stderr), ...
@@ -29,25 +32,37 @@ En este proyecto nos alejamos un poco del navegador para construir un programa q
 Diagrama de flujo
 Diagrama de flujo 
 
-Guía de uso e instalación de la librería.
-Instale la libreria via:
 
-npm install ivanaolortegui/LIM009-fe-md-links
-API mdLinks(path, opts)
+## Guía de uso e instalación de la librería.
+
+# Instale la libreria via:
+
+npm install LadyPino/SCL014-md-links
+
 El módulo exporta una función con la interfaz (API) esperada.
 El módulo implementa soporte para archivo individual
 El módulo implementa soporte para directorios
-El módulo implementa options.validate
-CLI
+El módulo implementa validate y stats
+
+
+## CLI
+
 Expone ejecutable md-links en el path (configurado en package.json)
-Se ejecuta sin errores / output esperado.
+
+~~~
+Se ejecuta sin errores ./ output esperado.
 El ejecutable implementa --validate.
 El ejecutable implementa --stats.
 El ejecutable implementa --validate y --stats juntos.
-JavaScript API
-El módulo debe poder importarse en otros scripts de Node.js y debe ofrecer la siguiente interfaz:
+~~~
+
+
+
+## JavaScript API
+El módulo se importa en otros scripts de Node.js y  ofrece la siguiente interfaz:
 
 mdLinks(path, options)
+
 Argumentos
 path: Ruta absoluta o relativa al archivo o directorio. Si la ruta pasada es relativa, debe resolverse como relativa al directorio desde donde se invoca node - current working directory).
 options: Un objeto con las siguientes propiedades:
@@ -151,22 +166,6 @@ Linea de comando CLI
 
 
 
-## 1. Preámbulo
-
-[Markdown](https://es.wikipedia.org/wiki/Markdown) es un lenguaje de marcado
-ligero muy popular entre developers. Es usado en muchísimas plataformas que
-manejan texto plano (GitHub, foros, blogs, ...), y es muy común
-encontrar varios archivos en ese formato en cualquier tipo de repositorio
-(empezando por el tradicional `README.md`).
-
-Estos archivos `Markdown` normalmente contienen _links_ (vínculos/ligas) que
-muchas veces están rotos o ya no son válidos y eso perjudica mucho el valor de
-la información que se quiere compartir.
-
-Dentro de una comunidad de código abierto, nos han propuesto crear una
-herramienta usando [Node.js](https://nodejs.org/), que lea y analice archivos
-en formato `Markdown`, para verificar los links que contengan y reportar
-algunas estadísticas.
 
 ![md-links](https://user-images.githubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg)
 

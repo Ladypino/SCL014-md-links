@@ -8,20 +8,22 @@ module.exports = (data, file) => {
    //regular expression finally found in https://regexlib.com/DisplayPatterns.aspx?AspxAutoDetectCookieSupport=1
   
   const arrayAllLinks = [];
+  //construimos un nuevo array vacio para ingresar nuestro array de todos los links a obtener
 
   const obtainLinks = data.match(expressionRURL);
-
-  obtainLinks.forEach((object) => {
-    const textCheking = new URL(object);
+//creamos variable contenedora  y le pasamos .match para unir nuestros links con la busqueda mediante expres regular
+  
+obtainLinks.forEach((object) => {
+    
     arrayAllLinks.push({ 
        File: file,
        Link: object,
-       ChekingT: textCheking.host});
+      });
   });
+// pusheamos y obtenemos nuestro linkurl y nuestro archivo
 
 
-
-
+//union contenedor de todos nustros links con los links
   validatingALLTheLinks(arrayAllLinks);
 
 };
