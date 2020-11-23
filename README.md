@@ -34,7 +34,7 @@ En este proyecto nos alejamos un poco del navegador para construir un programa q
 
 Diagrama de flujo 
 
-![diagrama-de-flujo](https://user-images.githubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg)
+![diagrama-de-flujo](https://github.com/Ladypino/SCL014-md-links/blob/master/images/Blue%20and%20Pink%20Customer%20Support%20Flowchart.png)
 
 ## Guía de uso e instalación de la librería.
 
