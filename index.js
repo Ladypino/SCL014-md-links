@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 
 
 const searchAndCheckRoute = require("./md-links");
