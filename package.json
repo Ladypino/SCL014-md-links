@@ -1,6 +1,6 @@
 {
   "name": "md-links-ladypino",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "dependencies": {
     "fetch": "^1.1.0",
     "node-fetch": "^2.6.1"
@@ -16,13 +16,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Laboratoria/SCL014-md-links.git"
+    "url": "git+https://github.com/Ladypino/SCL014-md-links.git"
   },
   "keywords": [],
   "author": "lady-pino-ramirez",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Laboratoria/SCL014-md-links/issues"
+    "url": "https://github.com/Ladypino/SCL014-md-links/issues"
   },
-  "homepage": "https://github.com/Laboratoria/SCL014-md-links#readme"
+  "homepage": "https://github.com/Ladypino/SCL014-md-links#readme"
 }
