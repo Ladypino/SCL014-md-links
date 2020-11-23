@@ -8,9 +8,12 @@
 * [3. Guía de uso e instalación de la librería](#3-Guía de uso e instalación de la librería)
 * [4. Instale la libreria via](#4-Instale la libreria via )
 * [5. CLI](#5-CLI)
-* [7. Hacker edition](#7-hacker-edition)
-* [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
-* [9. Checklist](#9-checklist)
+* [8. Javascripts API](#8-Javascripts API)
+* [8. Argumentos ](#8-Argumentos)
+* [8. Ejemplos](#8-Ejemplos)
+* [8. Options](#8-Options)
+
+
 
 # README.md
 
@@ -63,7 +66,7 @@ El módulo se importa en otros scripts de Node.js y  ofrece la siguiente interfa
 
 mdLinks(path, options)
 
-Argumentos
+## Argumentos
 path: Ruta absoluta o relativa al archivo o directorio. Si la ruta pasada es relativa, debe resolverse como relativa al directorio desde donde se invoca node - current working directory).
 options: Un objeto con las siguientes propiedades:
 validate: Booleano que determina si se desea validar los links encontrados.
@@ -99,12 +102,7 @@ mdLinks("./some/dir")
   })
   .catch(console.error);
   ```
-CLI 
-(Command Line Interface - Interfaz de Línea de Comando)
 
-El ejecutable de nuestra aplicación debe poder ejecutarse de la siguiente manera a través de la terminal:
-
-md-links <path-to-file> [options]
 
 ## Por ejemplo:
 ~~~
@@ -151,69 +149,6 @@ Broken: 1
 
 
 
-* [ ] [Recursión.](https://www.youtube.com/watch?v=lPPgY3HLlhQ)
-
-
-
-
-instalable via `npm install <github-user>/md-links`. Este
-  módulo debe incluir tanto un _ejecutable_ que podamos invocar en la línea de
-  comando como una interfaz que podamos importar con 
-  
-  `require` para usarlo programáticamente.
-
-
-
-
-
-
-
-
-Vemos que el _output_ en este caso incluye la palabra `ok` o `fail` después de
-la URL, así como el status de la respuesta recibida a la petición HTTP a dicha
-URL.
-
-##### `--stats`
-
-Si pasamos la opción `--stats` el output (salida) será un texto con estadísticas
-básicas sobre los links.
-
-```sh
-$ md-links ./some/example.md --stats
-Total: 3
-Unique: 3
-```
-
-También podemos combinar `--stats` y `--validate` para obtener estadísticas que
-necesiten de los resultados de la validación.
-
-```sh
-$ md-links ./some/example.md --stats --validate
-Total: 3
-Unique: 3
-Broken: 1
-```
-
-## 6. Entregables
-
-Módulo instalable via `npm install <github-user>/md-links`. Este módulo debe
-incluir tanto un ejecutable como una interfaz que 
-
-## 6. Entregables
-podamos importar con `require`
-para usarlo programáticamente.
-
-
-#### ¿Cómo hago para que mi módulo sea _instalable_ desde GitHub?
-
-Para que el módulo sea instalable desde GitHub solo tiene que:
-
-* Estar en un repo público de GitHub
-* Contener un `package.json` válido
-
-Con el comando `npm install githubname/reponame` podemos instalar directamente
-desde GitHub. Ver [docs oficiales de `npm install` acá](https://docs.npmjs.com/cli/install).
-
 
 
 
@@ -223,7 +158,7 @@ desde GitHub. Ver [docs oficiales de `npm install` acá](https://docs.npmjs.com/
 * [how-to-npm](https://github.com/workshopper/how-to-npm)
 * [promise-it-wont-hurt](https://github.com/stevekane/promise-it-wont-hurt)
 
-###  Recursos Utilizados
+###  Recursos Utilizados de guia
 
 * [Acerca de Node.js - Documentación oficial](https://nodejs.org/es/about/)
 * [Node.js file system - Documentación oficial](https://nodejs.org/api/fs.html)
