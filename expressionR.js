@@ -1,4 +1,6 @@
 const validatingALLTheLinks = require("./validate");
+const File = require("./files");
+const path = require("path");
 
 
 module.exports = (data, file) => {
@@ -25,6 +27,13 @@ obtainLinks.forEach((object) => {
 
 //union contenedor de todos nustros links con los links
   validatingALLTheLinks(arrayAllLinks);
+
+
+
+
+
+
+
 
 };
 

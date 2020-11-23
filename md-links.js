@@ -1,12 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-
-const Files = require("./files");
-
-
-const RouteExact = __dirname;//ruta estricta
-
+const Directory = require("./Directory");
 
 
 
@@ -19,7 +14,7 @@ const searchAndCheckRoute = (filePath) => {
         Directory(filePath); 
 
     } 
-    else if (imDirectory.isFile()) {Files(filePath)
+    else if (imDirectory.lisFile()) {Files(filePath)
     } 
     else {console.error(error);
     }
@@ -46,25 +41,6 @@ const searchAndCheckRoute = (filePath) => {
 
 
 
-const Directory = () => {
-    fs.readdir(RouteExact, (err, files) => {
-     // se crea primera funcion para leer directorio con la funcion readdir se pasan condicionales
-  
-    
-      if (err) {
-        console.log(err);
-      } 
-      else {
-        // .include para determinar si la matriz incluye elementos md
-        const FilesMD = files.filter( FilesMD=> FilesMD.includes('.md'))
-          // se filtra y se rutea a archivo
-          
-        FilesMD.forEach(archivo => {searchAndCheckRoute(archivo); });
-       
-      }
-    });
-  };
- 
 
   
 

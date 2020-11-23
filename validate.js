@@ -3,15 +3,12 @@ const fetch = require("node-fetch");
 let fetchUrl = fetch.fetchUrl;
 const { AllLinksUniquesAndTotal, AllLinksBroken } = require("./stats");
 
-
-
-
 module.exports = (arrayAllLinks) => {
 
   const validatingALLTheLinks
   = arrayAllLinks.map((object) => {
     return fetch(object.Link)
-    //utilizamos la libreria node-fech para ubicar y ir a buscar literalmente nuestros enlaces
+    //utilizamos la libreria node-fech para ubicar y ir a buscar literalmente nuestros links
       .then((valid) => {
         return {
           linkUrl: valid.url,
@@ -116,7 +113,7 @@ if (process.argv.length > 2) {
           `${" La ruta de su archivo es " + object.fileRoute  } 
           ${" La URL de su archivo es " + object.linkUrl  } 
           ${" El codigo de su archivo es " + object.NumberVf  } 
-          ${" La validacion  su archivo esta " + object.textVf  }
+          ${" La validacion de su archivo esta " + object.textVf  }
          `
 
         );
@@ -134,10 +131,8 @@ if (process.argv.length > 2) {
          
       }
     });
-  }
-  );
+  });
 
 
 
 } 
-
