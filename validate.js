@@ -3,11 +3,15 @@ const fetch = require("node-fetch");
 let fetchUrl = fetch.fetchUrl;
 const { AllLinksUniquesAndTotal, AllLinksBroken } = require("./stats");
 
+
+
+
 module.exports = (arrayAllLinks) => {
 
   const validatingALLTheLinks
   = arrayAllLinks.map((object) => {
     return fetch(object.Link)
+    //utilizamos la libreria node-fech para ubicar y ir a buscar literalmente nuestros enlaces
       .then((valid) => {
         return {
           linkUrl: valid.url,
@@ -130,8 +134,10 @@ if (process.argv.length > 2) {
          
       }
     });
-  });
+  }
+  );
 
 
 
 } 
+

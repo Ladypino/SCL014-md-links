@@ -1,5 +1,13 @@
-const Directory = require("./directory");
-const file = process.argv[2];
-Directory(file);
+#!/usr/bin/env node
+
+const searchAndCheckRoute = require("./md-links");
+
+const filePath = process.argv[2];
+
+
+
+searchAndCheckRoute(filePath);
+
+
 
 //renderizamos
