@@ -32,15 +32,15 @@ El objetivo práctico de este proyecto fué crear mi propia librería (o bibliot
 
 En este proyecto nos alejamos un poco del navegador para construir un programa que se ejecute usando Node.js, donde aprenderemos sobre cómo interactuar con el sistema archivos, con el entorno (proceso, env, stdin/stdout/stderr), ...
 
-Diagrama de flujo
 Diagrama de flujo 
 
+![md-links](https://user-images.githubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg)
 
 ## Guía de uso e instalación de la librería.
 
 # Instale la libreria via:
 
-npm install LadyPino/SCL014-md-links
+npm i md-links-ladypino
 
 El módulo exporta una función con la interfaz (API) esperada.
 El módulo implementa soporte para archivo individual
