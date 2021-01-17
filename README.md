@@ -5,7 +5,8 @@
 
 * [1. Introducción](#1-Introducción)
 * [2. Objetivos de aprendizaje](#2-objetivos-de-aprendizaje)
- 3. Guía de uso e instalación de la librería
+* [3.  Guía de uso e instalación de la librería](#3-Guía-de-uso-e-instalación-de-la-librería)
+
  4. Instale la libreria via
 * [5. CLI](#5-CLI)
 6. Javascripts API
